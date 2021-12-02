@@ -1,0 +1,42 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5%;
+}
+
+.roditelj {
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 20px solid rgb(255, 216, 209);
+    border-radius: 5em;
+}
+
+#title {
+    font-size: 2em;
+    margin-top: 50px;
+    text-align: center;
+    padding: 1em 0;
+    color: rgba(224, 183, 175, 0.747);
+}
+
+label {
+    font-size: 1em;
+    color: rgb(230, 156, 142);
+}
+
+.deo1 {
+    text-align: center;
+}
+
+.button {
+    display: grid;
+    justify-items: center;
+}

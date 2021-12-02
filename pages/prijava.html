@@ -5,83 +5,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Prijava</title>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../javascript/prijava-logic.js"></script>
-    <link rel="stylesheet" href="../css/grid.css">
+
+    <link rel="stylesheet" href="../css/prijava.css">
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
-    <div class="meni">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Početna strana</a></li>
-                <li><a href="#">Slikarstvo</a></li>
-                <li><a href="#">Vajarstvo</a></li>
-                <li><a href="#">O nama</a></li>
-            </ul>
-        </nav>
+
+    <div class="navbar">
+        <a href="../index.html">Početna</a>
+        <a href="#">Slikarstvo</a>
+        <a href="#">Vajarstvo</a>
+        <a href="#">O nama</a>
     </div>
 
-    <div class="content">
-    <div class="naslov">
-        <h1>Prijavi se</h1>
-        <p><b>i ne propusti priliku da ovog meseca naučiš nešto novo!</b></p>
-    </div>
+    <div class="container">
+
+        <div id="title">
+            <h1>Prijavi se</h1>
+            <p><b>i ne propusti priliku da ovog meseca naučiš nešto novo!</b></p>
+        </div>
 
 
-    <div class="roditelj">
+        <div class="roditelj">
 
-        <form id="prijava">
-            <div class="deo1">
-                <label for="ime">Ime</label> <br>
-                <input type="text" size="30" name="ime" id="ime" required><br><br>
-                <label for="prezime">Prezime</label> <br>
-                <input type="text" size="30" name="prezime" id="prezime" required> <br><br>
-                <label for="brtel">Broj telefona</label> <br>
-                <input type="text" size="30" name="brtel" id="brtel" maxlength="11" required><br><br>
-                <label for="brtel">Email</label> <br>
-                <input type="text" size="30" name="email" id="email" required>
-            </div>
-
-            <br><br>
-
-            <div>
-                <label>Vrsta kursa: </label>
-                <input type="radio" name="kurs" id="slikanje" value="slikanje">
-                <label for="slikanje">Slikanje</label>
-                <input type="radio" name="kurs" id="vajanje" value="vajanje">
-                <label for="vajanje">Vajanje</label><br><br>
-
-                <label>Nivo kursa: </label>
-                <input type="radio" name="nivo" id="osnovni" value="osnovni">
-                <label for="osnovni">Osnovni</label>
-                <input type="radio" name="nivo" id="srednji" value="srednji">
-                <label for="srednji">Srednji</label>
-                <input type="radio" name="nivo" id="napredni" value="napredni">
-                <label for="napredni">Napredni</label>
-
-
-                <br><br>
-
-                <div class="total">
-                    <label id="sum">Suma: 0 RSD</label>
+            <form id="prijava">
+                <div class="deo1">
+                    <label for="ime">Ime</label> <br>
+                    <input type="text" size="30" name="ime" id="ime" required><br><br>
+                    <label for="prezime">Prezime</label> <br>
+                    <input type="text" size="30" name="prezime" id="prezime" required> <br><br>
+                    <label for="brtel">Broj telefona</label> <br>
+                    <input type="text" size="30" name="brtel" id="brtel" maxlength="11" required><br><br>
+                    <label for="brtel">Email</label> <br>
+                    <input type="text" size="30" name="email" id="email" required>
                 </div>
 
                 <br><br>
-                <div class="dugme">
-                    <input type="submit" value="Kupi" id="submit">
-                    <p id="p-id"></p>
+
+                <div>
+                    <label>Vrsta kursa: </label>
+                    <input type="radio" name="kurs" id="slikanje" value="slikanje">
+                    <label for="slikanje">Slikanje</label>
+                    <input type="radio" name="kurs" id="vajanje" value="vajanje">
+                    <label for="vajanje">Vajanje</label><br><br>
+
+                    <label>Nivo kursa: </label>
+                    <input type="radio" name="nivo" id="osnovni" value="osnovni">
+                    <label for="osnovni">Osnovni</label>
+                    <input type="radio" name="nivo" id="srednji" value="srednji">
+                    <label for="srednji">Srednji</label>
+                    <input type="radio" name="nivo" id="napredni" value="napredni">
+                    <label for="napredni">Napredni</label>
+
+
+                    <br><br>
+
+                    <div class="total">
+                        <label id="sum">Suma: 0 RSD</label>
+                    </div>
+
+                    <br><br>
+
+                    <div class="button">
+                        <input type="submit" value="Kupi" id="submit">
+                        <p id="p-id"></p>
+                    </div>
+
                 </div>
 
-            </div>
+            </form>
 
-        </form>
 
-        
+        </div>
+
     </div>
-    
-    </div>
+
+    <footer>Copyright &copy; J&amp;J. All rights reserved.</footer>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
-var btn1;
-var btn2;
 $(document).ready(function () {
+    var btn1;
+    var btn2;
+
     $(".buttonS").click(function () {
         btn1 = true;
         console.log(btn2);
@@ -22,4 +23,24 @@ $(document).ready(function () {
         $(".t2").show("slow");
         $(".buttonV").css("background-color", "rgb(255, 146, 165)");
     });
+
+    var s;
+    var v;
+    $(".V").click(function () {
+        v = true;
+        if (s == true) {
+            $("#slikarstvo").hide();
+        }
+        $("#vajarstvo").show("slow");
+
+    });
+
+    $(".S").click(function () {
+        s = true;
+        if (v == true) {
+            $("#vajarstvo").hide();
+        }
+        $("#slikarstvo").show("slow");
+    });
+
 });
