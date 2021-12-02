@@ -1,0 +1,39 @@
+.roditelj{
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
+    border: 10px solid rgb(255, 216, 209);
+}
+
+.naslov{
+    display: grid;
+    justify-items: center;
+    color: rgb(255, 146, 165);
+}
+
+.deo1{
+    text-align: center;
+}
+
+.dugme{
+    display: grid;
+    justify-items: center;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav a{
+    color: rgb(255, 130, 1);
+    text-transform: uppercase;
+}
+
+.meni{
+    padding: 15px;
+    background-color: rgb(255, 216, 209);
+    position: sticky;
+}

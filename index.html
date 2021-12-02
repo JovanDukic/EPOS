@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursevi</title>
+    <link rel="stylesheet" href="css/pocetna.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript/pocetna.js"></script>
+</head>
+
+<body>
+
+    <div id="naslovna">
+        <div class="meni">
+            <nav>
+                <ul>
+                    <li><a href="pages/prijava.html">Prijava</a></li>
+                    <li><a href="#">Slikarstvo</a></li>
+                    <li><a href="#">Vajarstvo</a></li>
+                    <li><a href="#">O nama</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1 class="naslov">
+            Skola kurseva vajanja i stolarije
+        </h1>
+        <div id="pocetna">
+            <div class="uvod">
+                Nasa skola kurseva zanata počela je sa radom 2015. godine i od tada je stekla bogato iskustvo u
+                podučavanju starih zanata.
+                Vajanje, slikarstvo, stolarstvo, akvarel su samo neki od kurseva predvidjeni planom nase skole.
+                Organizovani smo tako da se u prvoj polovini godine odvijaju:
+                <ul class="prozor">
+                    <li class="S">Stolarstvo</li>
+                    <li class="V">Vajanje</li>
+                </ul>
+                <div class="Vajarstvo">Nasa skola kurseva, organizuje kurs vajarstva u kojem je moguće savladati osnovne
+                    i napredne tehnike vajanja,
+                    opšta pravila i korake u izradi skulptura, kao i oprobati se u manje ili više zahtevnim izazovima
+                    sopstvene mašte.
+                    Svake godine se prijavi najmanje 100 ljudi za svaki nivo kursa, pa je ovo lepa prilika ne samo da
+                    sae nauci nesto novo,
+                    vec i upoznaju novi ljudi.
+                </div>
+                <div class="Slikarstvo">Kroz kvalitetno provedeno vreme u radionicama, uz druženje u veseloj atmosferi,
+                    polaznici kursa crtanja se upoznaju, kako sa klasičnim, tako i modernim tehnikama.
+                    Kurs crtanja i slikanja u Beo Art House edukativnom centru pruža jedinstvenu priliku da se družite
+                    sa budućim umetnicima,
+                    kojima je kurs slikanja za početnike podjednako važan kao i vama, ali i sa profesionalcima u svom
+                    poslu.
+                </div>
+                <script>
+                    var s;
+                    var v;
+                    $(".V").click(function () {
+                        v = true;
+                        if (s == true) {
+                            $(".Slikarstvo").hide();
+                        }
+                        $(".Vajarstvo").show("slow");
+
+                    });
+
+                    $(".S").click(function () {
+                        s = true;
+                        if (v == true) {
+                            $(".Vajarstvo").hide();
+                        }
+                        $(".Slikarstvo").show("slow");
+                    });
+                </script>
+                <br>
+            </div>
+            <div class="slika">
+                <img src="slike/stolarija.png" width="100%" height="90%">
+            </div>
+            <div class="slika1">
+                <img src="slike/grncarstvo.png" width="100%" height="90%">
+            </div>
+
+            <div class="komentari">
+                <div class="komNaslov">Rekli su o nama:</div>
+                <div class="div1">
+                    Najbolji program za brzo ucenje! Sa lakoćom sam savladala cetvoromesecni kurs vajarstva. Sve
+                    pohvale!
+                    <br> Milica iz Zrenjanina
+
+                </div>
+                <div class="div2">
+                    Jedno divno iskustvo! Mentori su puni razumevanja i strpljivi za sve greske. Sada krecem na napredni
+                    kurs iz slikarstva. Jedva cekam!
+                    <br> Ana iz Krusevca
+                </div>
+                <div class="div3">
+                    Zaista lepo provedeno vreme! Svaka dan sam iscekivala casove vajarstva. Hvala puno!
+                    <br> Sara iz Negotina
+
+                </div>
+
+
+
+            </div>
+            <div class="opis">
+                <p>
+                    Dok je druga polovina godine predvidjena za ostale zanate koje organizujemo u skladu sa vasim
+                    zeljama i potrebama.
+                    Učenje zanatstva u nasoj skoli se bazira na različitim kreativnim i inovativnim metodama,
+                    a sve u skladu sa različitim zanatima, vrsti ili trajanju kursa. Pored toga,
+                    metode nastave se neprekidno usavršavaju u skladu sa svetskim tendencijama u oblasti podučavanja
+                    zanata. Bez obzira na zanat,
+                    vrstu i trajanje kursa, na našim kursevima velika pažnja se posvećuje
+                    motivisanju polaznika da razvijaju svoje sposobnosti učenja izabranog zanata i na efikasan i
+                    jednostavan način prošire svoje znanje.
+                    Iako su polaznici odabrali jedan kurs, trudimo se da ih zainteresujemo i za druge opcije, tako da
+                    mogu da prosire svoje znanje na vise oblasti.
+                    <br>
+                    <br>
+                    Učionice u kojima se odvija nastava su prijatna, klimatizovana i moderno opremljena mesta,
+                    različite kvadrature u zavisnosti od namene- za pojedince, veće ili manje grupe, decu.
+                    Sve učionice imaju računare i pratećuopremu, plazma televizore i ozvučenje i sve su povezane sa
+                    internetom.
+                    Sve ovo ima za cilj da se polaznici osećaju što prijatnije jer se samim tim i nastava uspešnije
+                    obavlja.
+                    <br>
+                    Ono na šta smo veoma ponosni jeste da kroz naše skole zanata tokom jedne kalendarske godine prođe
+                    oko 5.000 polaznika!
+                    Naši kursevi namenjeni su deci predškolskog i školskog uzrasta,srednjoškolcima i odraslima.
+                    Godine ne predstavljaju nikakvu barijeru u pohađanju kurseva zanata. U zavisnosti od potreba
+                    polaznika,
+                    kursevi se mogu izvoditi za jednu osobu, dve osobe ili za grupe od 3-12 polaznika.
+                    Dinamika nastave je prilagođena potrebama polaznika naših kurseva,
+                    tako da oni mogu da biraju da li će ići na klasični kurs koji se izvodi dva puta nedeljno po 90
+                    minuta,
+                    na ubrzani ili individualni koji se izvode tri ili više puta nedeljno i traju onoliko koliko je
+                    polazniku potrebno.
+                    Grupni kursevi za decu se izvode dva puta nedeljno po 45 minuta,
+                    a individualni dečji kursevi se izvode u zavisnosti od potreba polaznika.
+                    Trajanje opštih kurseva za odrasle je od 2 do 5 meseci u zavisnosti od nivoa, a dečjih je tokom cele
+                    školske godine.
+                </p>
+
+            </div>
+
+            <div class="prijava">
+                U nastavku mozete pogledati datume pocetka i zavrsetka kurseva:
+                <br>
+                <div class="prijavaButton">
+                    <button class="buttonS">Stolarija</button>
+                    <button class="buttonV">Vajarstvo</button>
+                </div>
+                <br>
+
+                <div class="tabela">
+                    <table border="1" class="t1">
+                        <thred>
+                            <tr>
+                                <th>Naziv kursa</th>
+                                <th>Nivo kursa</th>
+                                <th>Datum pocetka kursa</th>
+                                <th>Datum zavrsetka kursa</th>
+                            </tr>
+                        </thred>
+                        <tbody>
+                            <tr>
+                                <td align="center" rowspan="3">Stolarija</td>
+                                <td align="center">Osnovni kurs</td>
+                                <td align="center">1.10.2021.</td>
+                                <td align="center">1.3.2022.</td>
+                            </tr>
+                            <tr>
+                                <td>Srednji kurs</td>
+                                <td align="center">15.10.2021.</td>
+                                <td align="center">1.2.2022.</td>
+                            </tr>
+                            <tr>
+                                <td>Napredni kurs</td>
+                                <td align="center">1.11.2021.</td>
+                                <td align="center">29.12.2021.</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <script>
+                        // var btn1;
+                        // var btn2;
+                        // $( ".buttonS" ).click(function() {
+                        //     btn1 = true;
+                        //     console.log(btn2);     
+                        //     if(btn2)
+                        //     {
+                        //         $(".t2").hide();
+                        //         $(".buttonV" ).css("background-color","rgb(255, 216, 209)");
+                        //     }
+                        //     $(".t1" ).show( "slow"); 
+                        //     $(".buttonS" ).css("background-color","rgb(255, 146, 165)");
+                        //     console.log("Usao");     
+                        // });
+
+                        // $( ".buttonV" ).click(function() {
+                        //   btn2 = true;
+                        //   if(btn2)
+                        //     {
+                        //         $(".buttonS" ).css("background-color","rgb(255, 216, 209)");
+                        //         $(".t1").hide();
+                        //     }
+                        //   $( ".t2" ).show( "slow");
+                        //   $(".buttonV" ).css("background-color","rgb(255, 146, 165)");
+                        // });
+                    </script>
+
+                    <table border="1" class="t2">
+                        <thred>
+                            <tr>
+                                <th>Naziv kursa</th>
+                                <th>Nivo kursa</th>
+                                <th>Datum pocetka kursa</th>
+                                <th>Datum zavrsetka kursa</th>
+                            </tr>
+                        </thred>
+                        <tbody>
+                            <tr>
+                                <td align="center" rowspan="3">Vajarstvo</td>
+                                <td align="center">Osnovni kurs</td>
+                                <td align="center">1.10.2021.</td>
+                                <td align="center">1.3.2022.</td>
+                            </tr>
+                            <tr>
+                                <td>Srednji kurs</td>
+                                <td align="center">15.10.2021.</td>
+                                <td align="center">1.2.2022.</td>
+                            </tr>
+                            <tr>
+                                <td>Napredni kurs</td>
+                                <td align="center">1.11.2021.</td>
+                                <td align="center">29.12.2021.</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+            <div class="izlozba">
+                <p>Na kraju svakog kursa, radove nasih polaznika izlazemo na raznim lokacijama sirom zemlje</p>
+                <img src="slike/izlozba.png" class="izlozba_img" width="100%" height="87%">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
