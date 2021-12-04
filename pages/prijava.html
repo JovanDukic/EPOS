@@ -20,9 +20,9 @@
 
     <div class="navbar">
         <a href="../index.html">Početna</a>
-        <a href="#">Slikarstvo</a>
-        <a href="#">Vajarstvo</a>
-        <a href="#">O nama</a>
+        <a href="../pages/slikarstvo.html">Slikarstvo</a>
+        <a href="../pages/vajarstvo.html">Vajarstvo</a>
+        <a href="../pages/galerija.html">Galerija</a>
     </div>
 
     <div class="container">
@@ -42,19 +42,19 @@
                     <label for="prezime">Prezime</label> <br>
                     <input type="text" size="30" name="prezime" id="prezime" required> <br><br>
                     <label for="brtel">Broj telefona</label> <br>
-                    <input type="text" size="30" name="brtel" id="brtel" maxlength="11" required><br><br>
+                    <input type="text" size="30" name="brtel" id="brtel" required><br><br>
                     <label for="brtel">Email</label> <br>
                     <input type="text" size="30" name="email" id="email" required>
                 </div>
 
-                <br><br>
+                <br>
 
-                <div>
+                <div class="deo2">
                     <label>Vrsta kursa: </label>
                     <input type="radio" name="kurs" id="slikanje" value="slikanje">
-                    <label for="slikanje">Slikanje</label>
+                    <label for="slikanje">Slikarstvo</label>
                     <input type="radio" name="kurs" id="vajanje" value="vajanje">
-                    <label for="vajanje">Vajanje</label><br><br>
+                    <label for="vajanje">Vajarstvo</label><br>
 
                     <label>Nivo kursa: </label>
                     <input type="radio" name="nivo" id="osnovni" value="osnovni">
@@ -65,19 +65,26 @@
                     <label for="napredni">Napredni</label>
 
 
-                    <br><br>
+                    <br>
+                    <br>
+                    <div class="deo3">
+                        <div class="total">
+                            <label id="sum">Suma: 0 RSD</label>
+                        </div>
 
-                    <div class="total">
-                        <label id="sum">Suma: 0 RSD</label>
+                        <br>
+
+                        <div class="date">
+                            <label id="datum">Datum prijave:</label>
+                        </div>
+
+                        <br>
+                        <div class="button">
+                            <input type="submit" value="Kupi" id="submit">
+                            <p id="p-id"></p>
+                        </div>
+
                     </div>
-
-                    <br><br>
-
-                    <div class="button">
-                        <input type="submit" value="Kupi" id="submit">
-                        <p id="p-id"></p>
-                    </div>
-
                 </div>
 
             </form>
@@ -85,9 +92,10 @@
 
         </div>
 
+        <footer></footer>
     </div>
 
-    <footer>Copyright &copy; J&amp;J. All rights reserved.</footer>
+    
 </body>
 
 </html>
