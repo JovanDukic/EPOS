@@ -6,6 +6,16 @@ $(document).ready(function () {
 
     var flag = true;
 
+    if ($(window).width() > 900) { // true
+        flag = true;
+        $(".opis-kursa").css("flex-direction", "row");
+        $(".opis-kursa").css("padding", "5%");
+    } else { // false
+        flag = false;
+        $(".opis-kursa").css("flex-direction", "column");
+        $(".opis-kursa").css("padding", "7%");
+    }
+
     $(window).resize(function () {
         if ($(window).width() > 900) { // true
             if (!flag) {
