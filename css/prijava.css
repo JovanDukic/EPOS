@@ -11,17 +11,29 @@
 
 .roditelj {
     display: grid;
+    grid-template-columns: auto;
     justify-items: center;
-    padding: 20px;
+    text-align: center;
+    padding: 3%;
     margin-left: 10%;
     margin-right: 10%;
     border: 20px solid rgb(255, 216, 209);
     border-radius: 5em;
 }
 
+.kurs {
+    padding-bottom: 5%;
+}
+
+.deo1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
 #title {
     font-size: 2em;
-    margin-top: 50px;
+    margin-top: 2%;
     text-align: center;
     padding: 1em 0;
     color: rgba(224, 183, 175, 0.747);
@@ -32,37 +44,11 @@ label {
     color: rgb(230, 156, 142);
 }
 
-.deo1 {
-    text-align: center;
-}
-
-
 #submit {
     width: 40%;
-
 }
 
-.deo3 {
-    text-align: center;
+.date {
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}

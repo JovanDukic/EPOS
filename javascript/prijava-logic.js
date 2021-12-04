@@ -8,7 +8,6 @@ $(document).ready(function () {
     var c2 = false;
     var c3 = false;
 
-    var checkAler = false;
     $("#submit").click(function () {
         if ($("#ime").val() && $("#prezime").val()) {
             if (checkEmail($("#email").val()) != true) {
@@ -48,7 +47,7 @@ $(document).ready(function () {
                 }
 
                 confirm("Provera podataka:\nKorisnik:" + ime + " " + prezime + "\nBroj telefona: " + brtel + "\nEmail: " + email + "\nPrijavljuje se za kurs iz: " + vrsta_kursa + ", nivo kursa: " + nivo);
-             
+
             }
 
 

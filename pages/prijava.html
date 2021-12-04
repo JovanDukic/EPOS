@@ -37,25 +37,25 @@
 
             <form id="prijava">
                 <div class="deo1">
-                    <label for="ime">Ime</label> <br>
-                    <input type="text" size="30" name="ime" id="ime" required><br><br>
-                    <label for="prezime">Prezime</label> <br>
-                    <input type="text" size="30" name="prezime" id="prezime" required> <br><br>
-                    <label for="brtel">Broj telefona</label> <br>
-                    <input type="text" size="30" name="brtel" id="brtel" required><br><br>
-                    <label for="brtel">Email</label> <br>
-                    <input type="text" size="30" name="email" id="email" required>
+                    <label for="ime">Ime</label>
+                    <input type="text" name="ime" id="ime" required>
+                    <label for="prezime">Prezime</label>
+                    <input type="text" name="prezime" id="prezime" required>
+                    <label for="brtel">Broj telefona</label>
+                    <input type="text" name="brtel" id="brtel" required>
+                    <label for="brtel">Email</label>
+                    <input type="text" name="email" id="email" required>
                 </div>
 
-                <br>
-
-                <div class="deo2">
+                <div class="kurs">
                     <label>Vrsta kursa: </label>
                     <input type="radio" name="kurs" id="slikanje" value="slikanje">
                     <label for="slikanje">Slikarstvo</label>
                     <input type="radio" name="kurs" id="vajanje" value="vajanje">
-                    <label for="vajanje">Vajarstvo</label><br>
+                    <label for="vajanje">Vajarstvo</label>
+                </div>
 
+                <div class="kurs">
                     <label>Nivo kursa: </label>
                     <input type="radio" name="nivo" id="osnovni" value="osnovni">
                     <label for="osnovni">Osnovni</label>
@@ -63,29 +63,21 @@
                     <label for="srednji">Srednji</label>
                     <input type="radio" name="nivo" id="napredni" value="napredni">
                     <label for="napredni">Napredni</label>
-
-
-                    <br>
-                    <br>
-                    <div class="deo3">
-                        <div class="total">
-                            <label id="sum">Suma: 0 RSD</label>
-                        </div>
-
-                        <br>
-
-                        <div class="date">
-                            <label id="datum">Datum prijave:</label>
-                        </div>
-
-                        <br>
-                        <div class="button">
-                            <input type="submit" value="Kupi" id="submit">
-                            <p id="p-id"></p>
-                        </div>
-
-                    </div>
                 </div>
+
+                <div class="total">
+                    <label id="sum">Suma: 0 RSD</label>
+                </div>
+
+                <div class="date">
+                    <label id="datum">Datum prijave:</label>
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Kupi" id="submit">
+                    <p id="p-id"></p>
+                </div>
+
 
             </form>
 
@@ -95,7 +87,7 @@
         <footer></footer>
     </div>
 
-    
+
 </body>
 
 </html>
