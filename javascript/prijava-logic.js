@@ -10,10 +10,10 @@ $(document).ready(function () {
 
     $("#submit").click(function () {
         if ($("#ime").val() && $("#prezime").val()) {
-            if (checkEmail($("#email").val()) != true) {
-                alert("Uneli ste neispravan e-mail!");
-            } else if (checkPhone($("#brtel").val()) != true) {
+            if (checkPhone($("#brtel").val()) != true) {
                 alert("Uneli ste neispravan broj telefona!");
+            } else if (checkEmail($("#email").val()) != true) {
+                alert("Uneli ste neispravan e-mail!");
             } else if ($("#slikanje").prop("checked") == false && $("#vajanje").prop("checked") == false) {
                 alert("Izaberite barem jedan od ponudjenih kurseva!");
             } else if ($("#osnovni").prop("checked") == false && $("#srednji").prop("checked") == false && $("#napredni").prop("checked") == false) {
@@ -103,7 +103,7 @@ $(document).ready(function () {
             }
             p1 = true;
             p2 = false;
-            // kurs.vrsta_kursa = "slikarstvo";
+           
         }
         update();
     });
@@ -118,7 +118,7 @@ $(document).ready(function () {
             }
             p2 = true;
             p1 = false;
-            //  kurs.vrsta_kursa = "vajarstvo";
+            
         }
         update();
     });
@@ -139,7 +139,7 @@ $(document).ready(function () {
             c1 = true;
             c2 = false;
             c3 = false;
-            // kurs.nivo = "osnovni";
+          
         }
 
         update();
@@ -160,7 +160,7 @@ $(document).ready(function () {
             c2 = true;
             c1 = false;
             c3 = false;
-            // kurs.nivo = "srednji";
+           
         }
 
 
@@ -181,7 +181,7 @@ $(document).ready(function () {
             c3 = true;
             c1 = false;
             c2 = false;
-            //  kurs.nivo = "napredni";
+         
         }
 
         update();
