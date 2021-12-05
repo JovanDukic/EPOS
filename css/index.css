@@ -131,7 +131,7 @@ img {
     color: rgb(255, 130, 1);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .grid-container {
         grid-template-columns: auto;
         padding: 10%;
